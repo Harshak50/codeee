@@ -1,4 +1,5 @@
-import java.io.ObjectInputFilter.Status;
+package ll;
+
 
 public class LinkedList {
     public static class Node{
@@ -36,6 +37,18 @@ public class LinkedList {
     tail =  newNode;
    }
 
+
+   public void print(){
+    if(head == null){
+        System.out.println("Linkedlist is empty");
+        return;
+    }
+    Node temp = head;
+    while(temp != null){
+        System.out.println(temp.data);
+        temp =  temp.next;
+    }
+   }
     
     public static void main(String[] args) {
        LinkedList ll = new LinkedList();
@@ -43,6 +56,8 @@ public class LinkedList {
        ll.addFirst(1);
        ll.addLast(3);
        ll.addLast(4);
+
+       ll.print();
        
     }
 
