@@ -35,7 +35,6 @@ public class activities {
                 activities[i][1]=start[i];
                 activities[i][2]=end[i];
             }
-
         /*   col no 0 = index
              col no 1 = start[i]
              col no 2 = end[i]  */
